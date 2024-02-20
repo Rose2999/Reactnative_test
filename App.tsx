@@ -19,7 +19,7 @@ const TextInputExample = () => {
         placeholder="password"
         
       />
-  
+    <Text>Forget password?</Text>
       <ButtonComponent></ButtonComponent>
     </View>
   );
