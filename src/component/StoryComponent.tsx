@@ -51,14 +51,14 @@ type ItemProps = { title: string; imageUrl: string };
 const Item = ({ title, imageUrl }: ItemProps) => (
   <View style={styles.storyContainer}>
     <Image source={{ uri: imageUrl }} style={styles.storyImage} />
-    <Text>{title}</Text>
+    <Text style={styles.storyOwner}>{title}</Text>
   </View>
 );
  
 const StoryComponent = () => {
   return (
     <View style={styles.mainview} >
-      <Text>Stories</Text>
+      <Text style={styles.storyText}>Stories</Text>
       <FlatList
         showsHorizontalScrollIndicator={false}
         data={stories}
@@ -85,6 +85,14 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     borderWidth: 4,
   },
+  storyText:{
+    color:'black',
+    padding:10,
+  },
+  storyOwner:{
+    color:'black',
+
+  }
 });
  
 export default StoryComponent;
