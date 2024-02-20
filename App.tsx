@@ -1,27 +1,18 @@
 import React from 'react';
 import {View, StyleSheet, TextInput,TouchableOpacity,Text} from 'react-native';
-import ButtonComponent from './src/component/button';
 
-const TextInputExample = () => {
+import InstaHomeScreen from './src/sreens/InstaHomeScreen';
+
+
+
+const App = () => {
   
 
-  return (
-    <View style={{flexDirection:'column',flex:1,justifyContent:'center'}}>
-      <TextInput
-        style={styles.input}
-        placeholder='Email'
-        
-      />
-      <TextInput
-        style={styles.input}
-        
-        
-        placeholder="password"
-        
-      />
-    <Text>Forget password?</Text>
-      <ButtonComponent></ButtonComponent>
-    </View>
+  return (<View>
+   <InstaHomeScreen/>
+   
+
+   </View>
   );
 };
 
@@ -37,4 +28,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default TextInputExample;
+export default App;
