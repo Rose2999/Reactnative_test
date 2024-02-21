@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, TextInput,TouchableOpacity,Text} from 'react-native';
 import ButtonComponent from '../component/button';
 
-const TextInputExample = () => {
+const LoginMain = () => {
   
 
   return (
@@ -37,4 +37,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default TextInputExample;
+export default LoginMain;
