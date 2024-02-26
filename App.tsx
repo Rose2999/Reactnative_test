@@ -1,18 +1,17 @@
 import React from 'react';
 import {View, StyleSheet, TextInput,TouchableOpacity,Text} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
-import InstaHomeScreen from './src/sreens/InstaHomeScreen';
-
+import { HomeStackNavigation } from './src/navigation/AppNavigation';
 
 
 const App = () => {
   
 
-  return (<View>
-   <InstaHomeScreen/>
-   
-
-   </View>
+  return (
+  <NavigationContainer>
+    <HomeStackNavigation/>
+  </NavigationContainer>
   );
 };
 

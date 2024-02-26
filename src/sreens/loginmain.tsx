@@ -10,15 +10,11 @@ const LoginMain = () => {
       <TextInput
         style={styles.input}
         placeholder='Email'
-        
-      />
+        />
       <TextInput
         style={styles.input}
-        
-        
         placeholder="password"
-        
-      />
+        />
     <Text>Forget password?</Text>
       <ButtonComponent></ButtonComponent>
     </View>
